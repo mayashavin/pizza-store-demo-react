@@ -34,8 +34,6 @@ export const useCart = () => {
         setItems([]);
     }
 
-    console.log(items)
-
     return {
         items,
         total,

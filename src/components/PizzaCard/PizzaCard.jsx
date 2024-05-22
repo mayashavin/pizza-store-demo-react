@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
 import "./PizzaCard.css";
-import { useCart } from "../../hooks/useCart";
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 
 export const PizzaCard = ({ pizza }) => {
-    const { add } = useCart();
-    const addCart = () => add(pizza)
-    
+    const { add } = useContext(CartContext);
+    const addCart = () => add({ ...pizza, quantity: 1 })
+
     return (
         <article className="pizza--details-wrapper">
             <img src={pizza.image} alt={pizza.title} height="200" width="300" />
