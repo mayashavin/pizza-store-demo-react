@@ -1,0 +1,29 @@
+.pizza--details-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  border: 1px solid #ccc;
+}
+
+img {
+    object-fit: cover;
+}
+
+.pizza--inventory {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.pizza--details-btn {
+  margin-block-end: 1rem;
+}
+
+.pizza--details {
+  padding: 0 0.5rem;
+}
